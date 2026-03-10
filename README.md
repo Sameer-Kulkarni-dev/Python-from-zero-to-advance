@@ -1,8 +1,8 @@
 🐍 Python From Zero to Advanced
 
-A complete beginner-to-advanced Python learning repository designed to build strong fundamentals and progress toward real-world programming, automation, and data-related applications.
+A structured and comprehensive repository designed to take you from absolute beginner to advanced Python developer through practical examples, clear explanations, and hands-on exercises.
 
-This repository is structured to help learners move step-by-step from absolute beginner concepts to advanced Python topics, including practical coding examples and exercises.
+This repository provides a step-by-step learning path covering Python fundamentals, core programming concepts, object-oriented programming, and advanced Python topics used in real-world development.
 
 🎯 Objectives
 
