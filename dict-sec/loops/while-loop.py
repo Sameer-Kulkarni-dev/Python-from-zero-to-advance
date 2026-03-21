@@ -78,7 +78,17 @@
 #     print(i)
 #     i+=1
 
+n=5
+fact=1
 
+i=1
+ 
+while i <=n:
+    fact*= i
+    #print("fact of num is " , fact)
+    i+=1
+    
+    print(fact)
 
 
 
