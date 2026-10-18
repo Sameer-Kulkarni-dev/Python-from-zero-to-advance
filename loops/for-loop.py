@@ -58,10 +58,13 @@
 #     print(f"{n}  x  {i}  {n*i}")
     
 
-n=5
+"""n=5
 
 fact=1
 
 for i in range(1,n+1):
     fact *= i
-    print("factorial number is ",fact)
+    print("factorial number is ",fact)"""
+
+for i in range(1,11):
+    print(i ,end=" ")
