@@ -66,5 +66,15 @@ for i in range(1,n+1):
     fact *= i
     print("factorial number is ",fact)"""
 
-for i in range(1,11):
+# for i in range(1,11):
+#     print(i ,end=" ")
+
+# for i in range(1,11,2):
+#     print(i ,end=" ")
+
+# for i in range(11,0,-1):
+#     print(i ,end=" ")
+
+for i in range(11,0,-2):
     print(i ,end=" ")
+
