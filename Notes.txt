@@ -1,0 +1,96 @@
+COPY>>
+if i want to copy in the python code 
+the time complex is O(n) 
+considering the worst case 
+-------------------------------------------------------------------------------------------
+append>>    O(1) constant time
+ it is not dependent of the length of the list 
+------------------------------------------------------------------------------
+pop intermidiate>> O(N) linear time 
+The Golden Rule to Memorize:"If items have to shift to fill a gap, it is $O(n)$."
+------------------------------------------------------------------------------------------------------
+pop last>> O(1) The Golden Rule to Memorize:"If nobody has to shift, it is $O(1)$."
+------------------------------------------------------------------------------------------------
+Inserting in the Middle or Beginning: .insert(index, item) -> O(n)
+If you use .insert() to squeeze an item anywhere else in the list, 
+the time complexity is $O(n)$ (Linear Time).
+[The Golden Rule to Memorize:"Cutting the line causes shifting, which is $O(n)$.
+ Joining the back causes no shifting, which is $O(1)$."]
+
+ ------------------------------------------------------------------------------------------------
+ Get / set item in python >> O(1)
+ The Gym Locker Analogy
+Imagine a wall of gym lockers numbered 0 to 100.
+
+Get Item: If you want to know what is in locker number 50,
+ you don't have to open lockers 0 through 49 first. 
+ You just walk straight up to locker 50 and look inside.
+
+Set Item: If you want to put your bag in locker 50,
+ you walk straight to it, take out whatever is in there, and put your bag in.
+
+Nobody else has to move, and no other lockers are touched. It is a direct action.
+
+he Golden Rule to Memorize:"If you know the exact index position,
+ jumping straight to it is always $O(1)$."
+
+ -------------------------------------------------------------------------------
+ The Golden Rule to Memorize:"Deleting from the back leaves no gap O(1)
+
+  Deleting from the middle creates a gap that must be filled by shifting O(n)."
+ ---------------------------------------------------------------------------------
+
+ iteration >> O(n)
+ ---------------------------------------------------------------------------------
+ Get Slice>> O(k)
+
+ The Group Photo Analogy
+Imagine a massive line of 1,000 people waiting for a movie.
+ You decide you want a separate group photo of the people standing in positions 10 through 20
+ .To do this, you have to walk up to each of those 10 specific people 
+ and pull a copy of them over to a brand-new line for the photo.
+ If you only want a photo of 2 people, it is very fast. If you want a photo of 500 people,
+  it takes a lot longer. The time it takes depends entirely on the size of the new group (k). 
+
+  The Golden Rule to Memorize:"Slicing isn't just looking; it is copying.
+   Copying k items takes O(k) time."
+ ------------------------------------------------------------------------------
+ 1. Delete Slice: del my_list[2:5] -> O(n)
+ What Python is Actually Doing:
+Python deletes that chunk of items.
+ Then, to keep the list as a solid block of memory without holes,
+ it grabs every single item to the right of the deleted chunk and shifts them left.
+ The time it takes depends on how many items are left over that need to be moved O(n)
+ ----------------------------------------------------------------------------------
+ 2. Set Slice: my_list[2:5] = ["A", "B", "C", "D"] -> O(n + k)
+What Python is Actually Doing:
+Setting a slice is a two-part job for Python:Make room (The O(n) part): 
+If the new list of items is a different size than the old chunk,
+Python must shift all the remaining items in the list to the right (to make more room)
+or to the left (to close extra space).
+
+Put the new items in (The O(k) part): Python then copies the new items (k) into that perfectly sized gap.
+The Golden Rule to Memorize:"If you change the size of a gap in the middle of a list,
+ everyone behind the gap has to shift (O(n))."
+ -----------------------------------------------------------------------------
+
+1. Extend: my_list.extend(new_list) -> O(k) Where k is the number of items in the new_list you are adding.
+The Movie Line Analogy:
+A bus pulls up and 20 new people get off to join the very back of the movie line.
+ The original people in the line don't have to move or shift at all.
+ The time it takes just depends on how long it takes those 20 new people (k) to walk off the bus and
+  stand at the end.
+  
+  What Python is Actually Doing:
+Python takes the items from the new list and tacks them onto the end of the original list, one by one.
+Because they are being added to the back, there is no shifting. It simply takes $k$ steps to copy k items.
+
+-------------------------------------------------------------------------------------
+min/max>> to find min max it takes  O(n) 
+means it just iterate through the elements
+----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
