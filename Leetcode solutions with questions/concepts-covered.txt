@@ -1,1 +1,7 @@
+extractionj of digits
+{
 count digits
+palindrome
+armstrong
+}
+
